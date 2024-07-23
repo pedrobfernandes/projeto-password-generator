@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Palavra-Passe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Palavra-Passe</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Escolha os parâmetros</legend>
+                <div>
+                    <label for="passwordLength">Tamanho: </label>
+                    <input type="number" id="passwordLength" min="20" value="20">
+                </div>
+                <div>
+                    <label for="includeLowerCase">Incluir letras minúsculas: </label>
+                    <input type="checkbox" id="includeLowerCase">
+                </div>
+                <div>
+                    <label for="includeUpperCase">Incluir letras maiúsculas: </label>
+                    <input type="checkbox" id="includeUpperCase">
+                </div>
+                <div>
+                    <label for="includeNumbers">Incluir números: </label>
+                    <input type="checkbox" id="includeNumbers">
+                </div>
+                <div>
+                    <label for="includeSymbols">Incluir caracteres especiais: </label>
+                    <input type="checkbox" id="includeSymbols">
+                </div>
+                <div>
+                    <button type="button" id="generatePassword">Gerar Palavra-Passe</button>
+                </div>
+                <div>
+                    <label for="outputPassword">Sua Palavra-Passe: </label>
+                    <input type="text" id="outputPassword" readonly>
+                    <button type="button" id="copyPassword">Copiar</button>
+                </div>
+                <div>
+                    <p id="message"></p>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; 2024 Gerador de Palavra-Passe por
+            <a href="https://github.com/pedrobfernandes"
+            target="_blank">Pedro Fernandes</a>
+        </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
